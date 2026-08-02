@@ -1,7 +1,25 @@
 aid: wollit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wollit.png
 name: Wollit
-description: Wollit is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Wollit is a UK-based credit-health subscription service (£9.99/month)
+  that helps consumers build and strengthen their credit profile. Authorised and regulated
+  by the Financial Conduct Authority for credit-broking activities, Wollit reports
+  rent and subscription payments to Experian, Equifax and TransUnion, and bundles
+  a suite of consumer tools: Rent Reporting, Payment Reporting, an AI credit assistant
+  (Olli), Affordability Boost, Credit Smart lessons, and Credit Wins. It is a consumer-facing
+  fintech app and was surfaced as a portfolio company of Anthemis; it publishes no
+  public API, developer portal, or SDKs.'
 url: https://raw.githubusercontent.com/api-evangelist/wollit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Credit
+- Credit Building
+- Personal Finance
+- Consumer Finance
+- United Kingdom
+- Rent Reporting
 apis: []
+common:
+- type: DomainSecurity
+  url: security/wollit-domain-security.yml
+- type: Website
+  url: https://www.wollit.com/
+- type: Support
+  url: https://www.wollit.com/help
+- type: TermsOfService
+  url: https://www.wollit.com/terms
+- type: PrivacyPolicy
+  url: https://www.wollit.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
